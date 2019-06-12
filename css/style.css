@@ -7,13 +7,11 @@
         url("font/dridserif.woff") format("woff"),
         url("font/droidserif.woff2") format("woff2");
 }
-html {
-    margin-left: calc(100vw - 100%);
-}
 body {
     color: #4f4f4d;
     font-family: droidserif, sans-serif;
-    zoom: 85%;
+    text-align: justify;
+    width: auto;
 }
 a {
     color: #1a563d;
@@ -39,18 +37,17 @@ hr {
     background-color: #1a563d;
     border: none;
     height: 1px;
-    margin: 8px 0px;
+    margin: 0px;
 }
 table {
     border-collapse: collapse;
     border: 1px solid #1a563d;
-    margin: 10px 0px;
+    margin: 8px 0px;
     width: 100%;
 }
 td {
     border: 1px solid #1a563d;
-    padding: 5px;
-    text-align: justify;
+    padding: 8px;
 }
 .tdc {
     text-align: center;
@@ -63,55 +60,44 @@ ul > li:before {
     margin-left: -20px;
     margin-right: 10px;
 }
-
 .head-container {
-    height: 90px;
+    font-weight: bold;
     margin: 20px auto 0px auto;
-    width: 1500px;
+    text-align: left;
 }
 .head-left {
-    box-sizing: border-box;
     float: left;
-    font-size: 0.9em;
-    font-weight: bold;
     width: 28%;
 }
 .head-left h1 {
-    font-size: 2.8em;
-    margin: 10px 0px;
+    font-size: 3.0em;
+    margin: 8px 0px;
+}
+.head-left span {
+    font-size: 0.8em;
 }
 .head-right {
     background-color: #1a563d;
-    box-sizing: border-box;
-    color: white;
     float: left;
-    font-size: 1.24em;
-    font-weight: bold;
-    height: 90px;
+    font-size: 1.2em;
     line-height: 1.8em;
-    padding: 28px 0px 28px 28px;
+    padding: 27px 0px;
     width: 72%;
 }
 .head-right a {
     color: white;
-    display: inline;
-    margin-right: 44px;
+    margin-left: 27px;
 }
-.head-right a:last-child {
-    margin-right: 0px;
-}
-.head-right .a-current {
+.a-current {
     border-bottom: 2px white solid;
     opacity: 0.8;
 }
 .content-container {
-    line-height: 2.5em;
-    margin: 0px auto;
+    line-height: 2.4em;
     min-height: 400px;
-    padding: 14px 0px 0px 0px;
+    padding-top: 8px;
     position: relative;
-    transition: height 0.75s;
-    width: 1500px;
+    transition: height 0.7s;
 }
 .main-container,
 .cost-container,
@@ -122,27 +108,24 @@ ul > li:before {
     display: none;
     opacity: 0;
     position: absolute;
-    transition: opacity 1.25s;
+    transition: opacity 1.2s;
     visibility: hidden;
-    width: 1500px;
+    width: 100%;
 }
 .main-container {
     display: inline;
     opacity: 1;
-    text-align: justify;
     visibility: visible;
 }
 .main-container img {
-    width: 1500px;
+    width: 100%;
 }
 .footer {
     background-color: #1a563d;
-    color: white;
     display: table;
-    font-size: 1.1em;
-    height: 80px;
-    margin: 10px auto 0px auto;
-    width: 1500px;
+    font-size: 1.2em;
+    min-height: 80px;
+    width: 100%;
 }
 .footer a {
     border: 0px;
@@ -151,7 +134,6 @@ ul > li:before {
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
-    width: 375px;
 }
 .footer a div {
     display: inline-block;
@@ -159,7 +141,6 @@ ul > li:before {
 }
 .footer a .footer-img {
     background: url("../img/footer.png") no-repeat;
-    background-size: cover;
     height: 40px;
     width: 40px;
 }
@@ -174,12 +155,6 @@ ul > li:before {
 }
 .footer a .img-clock {
     background-position: -120px 0px;
-}
-.sorry {
-    font-size: 0.916em;
-    text-align: center;
-    margin: 0px auto;
-    width: 1500px;
 }
 .clearfix::after {
     clear: both;
