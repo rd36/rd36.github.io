@@ -1,3 +1,6 @@
+if (device.mobile()) {
+    document.getElementById("css").href = "css/mobile.css";
+}
 document.querySelector(".content-container").style.height = document.querySelector(".main-container").offsetHeight + "px";
 var setVisibility = function (elementName, isVisible) {
     var currentElement = document.querySelector("." + elementName + "-container");
