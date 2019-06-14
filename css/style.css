@@ -7,13 +7,16 @@
         url("font/dridserif.woff") format("woff"),
         url("font/droidserif.woff2") format("woff2");
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 html {
     margin: 0px 8px 8px 8px;
 }
 body {
     color: #4f4f4d;
     font-family: droidserif, sans-serif;
-    margin: 0px;
     text-align: justify;
     width: 100%;
 }
@@ -41,25 +44,26 @@ hr {
     background-color: #1a563d;
     border: none;
     height: 1px;
-    margin: 0px;
+}
+ol {
+    padding-left: 40px;
 }
 table {
-    font-size: 1.0em;
     border-collapse: collapse;
     border: 1px solid #1a563d;
-    margin: 8px 0px 12px 0px;
-    padding: 0px;
+    margin-bottom: 8px;
     width: 100%;
 }
 td {
     border: 1px solid #1a563d;
-    padding: 8px;
+    padding: 4px;
 }
 .tdc {
     text-align: center;
 }
 ul {
     list-style: none;
+    padding-left: 40px;
 }
 ul > li:before {
     content: ">";
@@ -102,7 +106,6 @@ ul > li:before {
     line-height: 2.4em;
     min-height: 400px;
     padding-top: 8px;
-    position: relative;
     transition: height 0.7s;
 }
 .main-container,
@@ -112,7 +115,6 @@ ul > li:before {
 .advn-container,
 .cont-container {
     display: none;
-
     opacity: 0;
     position: absolute;
     transition: opacity 1.2s;

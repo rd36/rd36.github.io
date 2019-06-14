@@ -1,7 +1,9 @@
 if (device.mobile()) {
     document.getElementById("css").href = "css/mobile.css";
 }
-document.querySelector(".content-container").style.height = document.querySelector(".main-container").offsetHeight + "px";
+if (!device.mobile()) {
+    document.querySelector(".content-container").style.height = document.querySelector(".main-container").offsetHeight + "px";
+}
 var setVisibility = function (elementName, isVisible) {
     var currentElement = document.querySelector("." + elementName + "-container");
     if (isVisible) {
@@ -10,7 +12,9 @@ var setVisibility = function (elementName, isVisible) {
             currentElement.style.opacity = 1;
             currentElement.style.visibility = "visible";
         }, 20);
-        document.querySelector(".content-container").style.height = currentElement.offsetHeight + "px";
+        if (!device.mobile()) {
+            document.querySelector(".content-container").style.height = currentElement.offsetHeight + "px";
+        }
     } else {
         currentElement.style.display = "none";
         setTimeout(function () {
