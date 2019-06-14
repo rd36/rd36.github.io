@@ -106,6 +106,7 @@ ul > li:before {
     line-height: 2.4em;
     min-height: 400px;
     padding-top: 8px;
+    position: relative;
     transition: height 0.7s;
 }
 .main-container,
