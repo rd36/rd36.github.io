@@ -20,11 +20,18 @@ var setVisibility = function (elementName, isVisible) {
         }, 20);
     }
 };
+var articlesName = "articles";
+var articlesArray = ["meeting", "tszh", "uk", "services"];
 var redirectPage = function (pageId) {
     var aCurrentLast = document.querySelector(".a-current");
     aCurrentLast.classList.remove("a-current");
     setVisibility(aCurrentLast.id, false);
-    document.getElementById(pageId).classList.add("a-current");
+    if (aCurrentLast.id === articlesName) {
+        for (i = 0; i < articlesArray.length; i++) {
+            setVisibility(articlesArray[i], false);
+        }
+    }
+    document.getElementById((articlesArray.indexOf(pageId) > -1) ? articlesName : pageId).classList.add("a-current");
     setVisibility(pageId, true);
 };
 var inputs = document.getElementsByTagName("a");
@@ -34,7 +41,6 @@ for (i = 0; i < inputs.length; i++) {
             evt.preventDefault();
             history.pushState(null, "", evt.target.href);
             redirectPage(this.id);
-            document.body.scrollTop = document.documentElement.scrollTop = 0;
         }, false);
     }
 }

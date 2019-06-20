@@ -96,7 +96,7 @@ ul > li:before {
 }
 .head-right a {
     color: white;
-    margin-left: 27px;
+    margin-left: 20px;
 }
 .a-current {
     border-bottom: 2px white solid;
@@ -104,14 +104,18 @@ ul > li:before {
 }
 .content-container {
     line-height: 2.4em;
-    min-height: 400px;
     padding-top: 8px;
     position: relative;
     transition: height 0.7s;
 }
 .main-container,
 .price-container,
+.articles-container,
 .about-container,
+.meeting-container,
+.tszh-container,
+.uk-container,
+.services-container,
 .questions-container,
 .advantages-container,
 .contacts-container {
@@ -130,11 +134,17 @@ ul > li:before {
 .main-container img {
     width: 100%;
 }
+.meeting-container,
+.tszh-container,
+.uk-container,
+.services-container {
+    width: 95%;
+}
 .footer {
     background-color: #1a563d;
     display: table;
     font-size: 1.2em;
-    min-height: 80px;
+    height: 80px;
     width: 100%;
 }
 .footer a {

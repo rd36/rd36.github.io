@@ -94,7 +94,7 @@ ul > li:before {
 }
 .head-right a {
     color: white;
-    margin-left: 27px;
+    margin-left: 20px;
 }
 .a-current {
     border-bottom: 2px white solid;
@@ -108,12 +108,16 @@ ul > li:before {
 }
 .main-container,
 .price-container,
+.articles-container,
 .about-container,
+.meeting-container,
+.tszh-container,
+.uk-container,
+.services-container,
 .questions-container,
 .advantages-container,
 .contacts-container {
     display: none;
-    height: auto;
     opacity: 0;
     transition: opacity 1.2s;
     visibility: hidden;
