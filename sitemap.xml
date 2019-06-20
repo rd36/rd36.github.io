@@ -2,8 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>https://rd36.ru/</loc>
-        <lastmod>2019-06-14T22:30:00+00:00</lastmod>
-    </url>
+	<url>
+		<loc>https://rd36.ru/</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://rd36.ru/price</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://rd36.ru/about</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://rd36.ru/questions</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://rd36.ru/advantages</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
+	<url>
+		<loc>https://rd36.ru/contacts</loc>
+		<lastmod>2019-06-20T15:15:00+03:00</lastmod>
+	</url>
 </urlset>

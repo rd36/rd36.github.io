@@ -1,9 +1,6 @@
 if (device.mobile()) {
     document.getElementById("css").href = "css/mobile.css";
 }
-if (!device.mobile()) {
-    document.querySelector(".content-container").style.height = document.querySelector(".main-container").offsetHeight + "px";
-}
 var setVisibility = function (elementName, isVisible) {
     var currentElement = document.querySelector("." + elementName + "-container");
     if (isVisible) {
@@ -23,16 +20,35 @@ var setVisibility = function (elementName, isVisible) {
         }, 20);
     }
 };
-var inputs = document.querySelectorAll("a");
+var redirectPage = function (pageId) {
+    var aCurrentLast = document.querySelector(".a-current");
+    aCurrentLast.classList.remove("a-current");
+    setVisibility(aCurrentLast.id, false);
+    document.getElementById(pageId).classList.add("a-current");
+    setVisibility(pageId, true);
+};
+var inputs = document.getElementsByTagName("a");
 for (i = 0; i < inputs.length; i++) {
     if (inputs[i].hasAttribute("id")) {
-        inputs[i].addEventListener("click", function () {
-            var aCurrentLast = document.querySelector(".a-current");
-            aCurrentLast.classList.remove("a-current");
-            setVisibility(aCurrentLast.id, false);
-            document.getElementById(this.id).classList.add("a-current");
-            setVisibility(this.id, true);
+        inputs[i].addEventListener("click", function (evt) {
+            evt.preventDefault();
+            history.pushState(null, "", evt.target.href);
+            redirectPage(this.id);
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         }, false);
     }
 }
+var setCurrentPage = function () {
+    var currentHrefId = window.location.href.split("/")[window.location.href.split("/").length - 1];
+    if (currentHrefId === "") {
+        currentHrefId = "main";
+    }
+    redirectPage(currentHrefId);
+    if (!device.mobile()) {
+        document.querySelector(".content-container").style.height = document.querySelector("." + currentHrefId + "-container").offsetHeight + "px";
+    }
+};
+window.onpopstate = function () {
+    setCurrentPage();
+};
+setCurrentPage();

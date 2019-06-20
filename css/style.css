@@ -110,11 +110,11 @@ ul > li:before {
     transition: height 0.7s;
 }
 .main-container,
-.cost-container,
+.price-container,
 .about-container,
-.qa-container,
-.advn-container,
-.cont-container {
+.questions-container,
+.advantages-container,
+.contacts-container {
     display: none;
     opacity: 0;
     position: absolute;
