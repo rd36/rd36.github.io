@@ -21,7 +21,7 @@ var setVisibility = function (elementName, isVisible) {
     }
 };
 var articlesName = "articles";
-var articlesArray = ["meeting", "tszh", "uk", "services"];
+var articlesArray = ["reestr", "meeting", "tszh", "uk", "services"];
 var redirectPage = function (pageId) {
     var aCurrentLast = document.querySelector(".a-current");
     aCurrentLast.classList.remove("a-current");
@@ -41,6 +41,7 @@ for (i = 0; i < inputs.length; i++) {
             evt.preventDefault();
             history.pushState(null, "", evt.target.href);
             redirectPage(this.id);
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
         }, false);
     }
 }

@@ -110,8 +110,9 @@ ul > li:before {
 }
 .main-container,
 .price-container,
-.articles-container,
 .about-container,
+.articles-container,
+.reestr-container,
 .meeting-container,
 .tszh-container,
 .uk-container,
@@ -134,6 +135,7 @@ ul > li:before {
 .main-container img {
     width: 100%;
 }
+.reestr-container,
 .meeting-container,
 .tszh-container,
 .uk-container,
