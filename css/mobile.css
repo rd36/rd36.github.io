@@ -103,7 +103,6 @@ ul > li:before {
 .content-container {
     line-height: 2.4em;
     padding-top: 8px;
-    position: relative;
     transition: height 0.7s;
 }
 .main-container,

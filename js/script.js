@@ -9,9 +9,6 @@ var setVisibility = function (elementName, isVisible) {
             currentElement.style.opacity = 1;
             currentElement.style.visibility = "visible";
         }, 20);
-        if (!device.mobile()) {
-            document.querySelector(".content-container").style.height = currentElement.offsetHeight + "px";
-        }
     } else {
         currentElement.style.display = "none";
         setTimeout(function () {
@@ -51,9 +48,6 @@ var setCurrentPage = function () {
         currentHrefId = "main";
     }
     redirectPage(currentHrefId);
-    if (!device.mobile()) {
-        document.querySelector(".content-container").style.height = document.querySelector("." + currentHrefId + "-container").offsetHeight + "px";
-    }
 };
 window.onpopstate = function () {
     setCurrentPage();
