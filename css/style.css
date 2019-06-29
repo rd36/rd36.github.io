@@ -12,12 +12,13 @@
     padding: 0px;
 }
 html {
-    margin: 0px 43px 63px 17px;
+    margin: 0px 4px 94px 4px;
 }
 body {
     color: #4f4f4d;
     font-family: droidserif, sans-serif;
-    text-align: justify;
+    font-size: 0.95em;
+    text-align: left;
     width: 100%;
 }
 a {
@@ -51,12 +52,14 @@ ol {
 table {
     border-collapse: collapse;
     border: 1px solid #1a563d;
-    margin-bottom: 8px;
+    font-size: 0.9em;
+    margin-bottom: 4px;
     width: 100%;
 }
 td {
     border: 1px solid #1a563d;
     padding: 4px;
+    vertical-align: top;
 }
 .tdc {
     text-align: center;
@@ -76,8 +79,6 @@ ul > li:before {
     text-align: left;
 }
 .head-left {
-    float: left;
-    width: 28%;
 }
 .head-left h1 {
     font-size: 3.0em;
@@ -88,11 +89,9 @@ ul > li:before {
 }
 .head-right {
     background-color: #1a563d;
-    float: left;
     font-size: 1.2em;
     line-height: 1.8em;
     padding: 27px 0px;
-    width: 72%;
 }
 .head-right a {
     color: white;
@@ -107,36 +106,22 @@ ul > li:before {
     padding-top: 8px;
     transition: height 0.7s;
 }
-.main-container,
-.price-container,
-.about-container,
-.articles-container,
-.reestr-container,
-.meeting-container,
-.tszh-container,
-.uk-container,
-.services-container,
-.questions-container,
-.advantages-container,
-.contacts-container {
-    display: none;
-    opacity: 0;
-    transition: opacity 1.2s;
-    visibility: hidden;
-    width: 100%;
-}
-.main-container {
-    display: inline;
-    opacity: 1;
-    visibility: visible;
-}
 .main-container img {
     width: 100%;
+}
+.article-container {
+    font-size: 0.95em;
+}
+.article-container p {
+    padding-top: 17px;
+}
+.article-container li {
+    padding-top: 7px;
 }
 .footer {
     background-color: #1a563d;
     display: table;
-    font-size: 1.2em;
+    font-size: 0.75em;
     height: 80px;
     width: 100%;
 }
