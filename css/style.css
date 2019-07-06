@@ -13,6 +13,7 @@
 }
 html {
     margin: 0px 43px 60px 17px;
+    overflow-y: scroll;
 }
 body {
     color: #4f4f4d;
