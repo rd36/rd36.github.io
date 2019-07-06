@@ -12,18 +12,15 @@
     padding: 0px;
 }
 html {
-    margin: 0px 4px 94px 4px;
+    margin: 0px 43px 60px 17px;
 }
 body {
     color: #4f4f4d;
     font-family: droidserif, sans-serif;
     font-size: 0.95em;
-    text-align: left;
-    width: 100%;
+    text-align: justify;
 }
 a {
-    color: #1a563d;
-    cursor: pointer;
     font-weight: bold;
     text-decoration: none;
 }
@@ -52,14 +49,12 @@ ol {
 table {
     border-collapse: collapse;
     border: 1px solid #1a563d;
-    font-size: 0.9em;
     margin-bottom: 4px;
     width: 100%;
 }
 td {
     border: 1px solid #1a563d;
     padding: 4px;
-    vertical-align: top;
 }
 .tdc {
     text-align: center;
@@ -75,23 +70,26 @@ ul > li:before {
 }
 .head-container {
     font-weight: bold;
-    margin: 20px auto 0px auto;
-    text-align: left;
 }
 .head-left {
+    float: left;
+    text-align: left;
+    width: 28%;
 }
 .head-left h1 {
     font-size: 3.0em;
-    margin: 8px 0px;
+    padding: 8px 0px;
 }
 .head-left span {
     font-size: 0.8em;
 }
 .head-right {
     background-color: #1a563d;
+    float: left;
     font-size: 1.2em;
     line-height: 1.8em;
     padding: 27px 0px;
+    width: 72%;
 }
 .head-right a {
     color: white;
@@ -103,14 +101,14 @@ ul > li:before {
 }
 .content-container {
     line-height: 2.4em;
-    padding-top: 8px;
-    transition: height 0.7s;
+    margin-top: 4px;
 }
 .main-container img {
     width: 100%;
 }
 .article-container {
     font-size: 0.95em;
+    padding: 0px 150px;
 }
 .article-container p {
     padding-top: 17px;
@@ -121,8 +119,8 @@ ul > li:before {
 .footer {
     background-color: #1a563d;
     display: table;
-    font-size: 0.75em;
-    height: 80px;
+    font-size: 1.2em;
+    padding: 14px 0px;
     width: 100%;
 }
 .footer a {
@@ -130,11 +128,13 @@ ul > li:before {
     color: white;
     display: table-cell;
     font-weight: normal;
+    padding: 8px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .footer a div {
     display: inline-block;
+    text-align: left;
     vertical-align: middle;
 }
 .footer a .footer-img {
@@ -158,4 +158,44 @@ ul > li:before {
     clear: both;
     content: "";
     display: table;
+}
+@media only screen and (max-width: 1024px) {
+    html {
+        margin: 0px 4px 4px 4px;
+    }
+    body {
+        font-size: 1.0em;
+        text-align: left;
+    }
+    table {
+        table-layout: fixed;
+    }
+    td {
+        vertical-align: top;
+        word-wrap: break-word;
+    }
+    .tdn {
+        display: none;
+    }
+    .head-left {
+        float: none;
+        width: 100%;
+    }
+    .head-left span {
+        font-size: 1.0em;
+    }
+    .head-right {
+        float: none;
+        width: 100%;
+    }
+    .article-container {
+        font-size: 1.0em;
+        padding: 0px;
+    }
+    .footer {
+        font-size: 1.0em;
+    }
+    .footer a:nth-child(2) {
+        display: none;
+    }
 }

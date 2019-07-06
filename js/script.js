@@ -1,37 +1,9 @@
 if (!device.mobile()) {
-    document.getElementsByTagName("html")[0].style.margin = "0px 43px 63px 17px";
-    document.getElementsByTagName("body")[0].style.textAlign = "justify";
-
-    var table = document.getElementsByTagName("table");
-    for (var i = 0; i < table.length; i++) {
-        table[i].style.fontSize = "1em";
-        table[i].style.marginBottom = "8px";
-    }
-
-    var td = document.getElementsByTagName("td");
-    for (var i = 0; i < td.length; i++) {
-        td[i].style.verticalAlign = "middle";
-    }
-
-    var headLeft = document.getElementsByClassName("head-left")[0];
-    if (headLeft) {
-        headLeft.style.float = "left";
-        headLeft.style.width = "28%";
-    }
-
-    var headRight = document.getElementsByClassName("head-right")[0];
-    if (headRight) {
-        headRight.style.float = "left";
-        headRight.style.width = "72%";
-    }
-
-    var articleContainer = document.getElementsByClassName("article-container")[0];
-    if (articleContainer) {
-        articleContainer.style.padding = "0px 150px";
-    }
-
-    var footer = document.getElementsByClassName("footer")[0];
-    if (footer) {
-        footer.style.fontSize = "1.2em";
-    }
+    var tidio = document.createElement("script");
+    tidio.src = "//code.tidio.co/pgoq6wtidr0fdvwn42rxl0ys4cayzbez.js";
+    document.body.appendChild(tidio);
+    var zadarma = document.createElement("script");
+    zadarma.type = "text/javascript";
+    zadarma.innerHTML = "var ZCallbackWidgetLinkId='8a4fa8d7ce3c419a14330f13b613e135';var ZCallbackWidgetDomain='my.zadarma.com';(function(){var lt=document.createElement('script');lt.type='text/javascript';lt.charset='utf-8';lt.async=true;lt.src='https://'+ZCallbackWidgetDomain+'/callbackWidget/js/main.min.js';var sc=document.getElementsByTagName('script')[0];if (sc)sc.parentNode.insertBefore(lt,sc);else document.documentElement.firstChild.appendChild(lt);})();"
+    document.body.appendChild(zadarma);
 }
