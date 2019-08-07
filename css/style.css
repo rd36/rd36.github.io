@@ -1,11 +1,26 @@
 @font-face {
-    font-family: "droidserif";
-    src: url("font/droidserif.eot");
-    src: url("font/droidserif.eot") format("embedded-opentype"),
-        url("font/droidserif.ttf") format("truetype"),
-        url("font/droidserif.svg#droidserif") format("svg"),
-        url("font/dridserif.woff") format("woff"),
-        url("font/droidserif.woff2") format("woff2");
+    font-family: "Droid Serif";
+    src: local("Droid Serif"), local("DroidSerif"), url("font/droidserif.woff2") format("woff2"), url("font/droidserif.woff") format("woff"), url("font/droidserif.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Droid Serif";
+    src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url("font/droidserifitalic.woff2") format("woff2"), url("font/droidserifitalic.woff") format("woff"), url("font/droidserifitalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Droid Serif";
+    src: local("Droid Serif Bold"), local("DroidSerif-Bold"), url("font/droidserifbold.woff2") format("woff2"), url("font/droidserifbold.woff") format("woff"), url("font/droidserifbold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Droid Serif";
+    src: local("Droid Serif Bold Italic"), local("DroidSerif-BoldItalic"), url("font/droidserifbolditalic.woff2") format("woff2"), url("font/droidserifbolditalic.woff") format("woff"), url("font/droidserifbolditalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
 }
 * {
     margin: 0px;
@@ -17,7 +32,7 @@ html {
 }
 body {
     color: #4f4f4d;
-    font-family: droidserif, sans-serif;
+    font-family: "Droid Serif";
     font-size: 0.95em;
     text-align: justify;
 }
@@ -25,10 +40,7 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
-a:link {
-    color: #1a563d;
-}
-a:visited {
+a:link, a:visited {
     color: #1a563d;
 }
 a:hover {
@@ -38,6 +50,13 @@ a:hover {
 a:active {
     border-bottom: 2px white solid;
     opacity: 0.4;
+}
+p a,
+p a:link,
+p a:visited,
+p a:hover,
+p a:active {
+    border-bottom: 2px #1a563d solid;
 }
 hr {
     background-color: #1a563d;
@@ -184,6 +203,9 @@ ul > li:before {
     }
     .head-left span {
         font-size: 1.0em;
+    }
+    .head-left h1 {
+        font-size: 2.8em;
     }
     .head-right {
         float: none;
