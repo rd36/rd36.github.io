@@ -51,6 +51,17 @@ a:active {
     border-bottom: 2px white solid;
     opacity: 0.4;
 }
+button,
+input {
+    color: #4f4f4d;
+    font-family: "Droid Serif";
+    font-size: 1em;
+    margin: 8px 8px 8px 0px;
+    padding: 4px;
+}
+input {
+    width: 96px;
+}
 p a,
 p a:link,
 p a:visited,
