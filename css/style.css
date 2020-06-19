@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 a:link, a:visited {
-    color: #1a563d;
+    color: #4877a9;
 }
 a:hover {
     border-bottom: 2px white solid;
@@ -68,10 +68,10 @@ p a:link,
 p a:visited,
 p a:hover,
 p a:active {
-    border-bottom: 2px #1a563d solid;
+    border-bottom: 2px #4877a9 solid;
 }
 hr {
-    background-color: #1a563d;
+    background-color: #4877a9;
     border: none;
     height: 1px;
 }
@@ -80,12 +80,12 @@ ol {
 }
 table {
     border-collapse: collapse;
-    border: 1px solid #1a563d;
+    border: 1px solid #4877a9;
     margin-bottom: 4px;
     width: 100%;
 }
 td {
-    border: 1px solid #1a563d;
+    border: 1px solid #4877a9;
     padding: 4px;
 }
 .tdc {
@@ -116,7 +116,7 @@ ul > li:before {
     font-size: 14px;
 }
 .head-right {
-    background-color: #1a563d;
+    background-color: #4877a9;
     float: left;
     font-size: 20px;
     line-height: 28px;
@@ -149,7 +149,7 @@ ul > li:before {
     padding-top: 7px;
 }
 .footer {
-    background-color: #1a563d;
+    background-color: #4877a9;
     display: table;
     font-size: 20px;
     padding: 14px 0px;
