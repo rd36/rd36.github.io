@@ -33,7 +33,7 @@ html {
 body {
     color: #4f4f4d;
     font-family: "Droid Serif";
-    font-size: 0.95em;
+    font-size: 15px;
     text-align: justify;
 }
 a {
@@ -109,17 +109,17 @@ ul > li:before {
     width: 28%;
 }
 .head-left h1 {
-    font-size: 3.0em;
+    font-size: 48px;
     padding: 8px 0px;
 }
 .head-left span {
-    font-size: 0.8em;
+    font-size: 14px;
 }
 .head-right {
     background-color: #1a563d;
     float: left;
-    font-size: 1.2em;
-    line-height: 1.8em;
+    font-size: 20px;
+    line-height: 28px;
     padding: 27px 0px;
     width: 72%;
 }
@@ -132,14 +132,14 @@ ul > li:before {
     opacity: 0.8;
 }
 .content-container {
-    line-height: 2.4em;
+    line-height: 36px;
     margin-top: 4px;
 }
 .main-container img {
     width: 100%;
 }
 .article-container {
-    font-size: 0.95em;
+    font-size: 15px;
     padding: 0px 150px;
 }
 .article-container p {
@@ -151,7 +151,7 @@ ul > li:before {
 .footer {
     background-color: #1a563d;
     display: table;
-    font-size: 1.2em;
+    font-size: 20px;
     padding: 14px 0px;
     width: 100%;
 }
@@ -196,7 +196,7 @@ ul > li:before {
         margin: 0px 4px 4px 4px;
     }
     body {
-        font-size: 1.0em;
+        font-size: 17px;
         text-align: left;
     }
     table {
@@ -214,21 +214,21 @@ ul > li:before {
         width: 100%;
     }
     .head-left span {
-        font-size: 1.0em;
+        font-size: 17px;
     }
     .head-left h1 {
-        font-size: 2.8em;
+        font-size: 44px;
     }
     .head-right {
         float: none;
         width: 100%;
     }
     .article-container {
-        font-size: 1.0em;
+        font-size: 17px;
         padding: 0px;
     }
     .footer {
-        font-size: 1.0em;
+        font-size: 17px;
     }
     .footer a:nth-child(2) {
         display: none;
