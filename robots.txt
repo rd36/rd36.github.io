@@ -3,7 +3,7 @@ Host: https://rd36.ru
 Disallow: 
 
 User-Agent: Googlebot
-Disallow: 
+Disallow: /files/
 
 User-agent: *
 Disallow: 
