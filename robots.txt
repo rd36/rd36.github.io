@@ -1,12 +1,10 @@
 User-agent: Yandex
 Host: https://rd36.ru
-Disallow: /files/rd36.ru.xlsx
 
 User-Agent: Googlebot
 Host: https://rd36.ru
-Disallow: /files/rd36.ru.xlsx
 
 User-agent: *
-Disallow: /files/rd36.ru.xlsx
+Host: https://rd36.ru
 
 Sitemap: https://rd36.ru/sitemap.xml
