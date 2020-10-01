@@ -1,10 +1,11 @@
 User-agent: Yandex
+Allow: /
 Host: https://rd36.ru
 
 User-Agent: Googlebot
-Host: https://rd36.ru
+Allow: /
 
 User-agent: *
-Host: https://rd36.ru
+Allow: /
 
 Sitemap: https://rd36.ru/sitemap.xml
